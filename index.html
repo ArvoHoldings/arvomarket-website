@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arvo Industries</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+text-align: center; /* Add this line */
+}
+.header {
+background-color: white;
+color: black;
+text-align: center;
+padding: 10px 0;
+font-size: 2em; /* Increase font size */
+font-weight: bold; /* Make text bold */
+}
+#image-container {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh; /* Adjust height as needed */
+}
+#image-container img {
+width: auto;
+height: auto;
+max-width: 80%; /* Adjust the width to 80% of the container */
+max-height: 100%;
+}
+.toggle-image {
+animation: toggle-image 5s infinite alternate;
+}
+@keyframes toggle-image {
+from {
+    transform: translateY(0);
+}
+to {
+    transform: translateY(100%);
+}
+}
+</style>
+</head>
+<body>
+<div class="header">
+Arvo Industries
+</div>
+<br><br>
+<p>
+Investing in American resiliency, independence, and innovation.
+<br><br>
+The company generates revneue through capital gains, rental income, and other sources.
+<br><br>
+</p>
+<div id="image-container">
+<img class="toggle-image" src="imagexyz.png" alt="Image xyz">
+</div>
+</body>
+</html>
